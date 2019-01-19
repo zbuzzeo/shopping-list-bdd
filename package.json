@@ -1,0 +1,28 @@
+{
+  "name": "shopping-list-bdd",
+  "version": "0.5.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zbuzzeo/shopping-list-bdd.git"
+  },
+  "author": "zbuzzeo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zbuzzeo/shopping-list-bdd/issues"
+  },
+  "homepage": "https://github.com/zbuzzeo/shopping-list-bdd#readme"
+}
