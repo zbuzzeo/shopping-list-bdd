@@ -32,10 +32,9 @@ class ShoppingList {
 
   render() {
     const htmlArray = [];
-    this.items.forEach(item => {
-      htmlArray.push(item.render());
-    });
-
+    for (let i = 0; i < this.items.length; i++) {
+      htmlArray.push(this.items[i].render(i));
+    }
     return `<ul>${htmlArray.join('')}</ul>`;
   }
 }

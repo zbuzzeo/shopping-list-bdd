@@ -14,6 +14,14 @@ function addToShoppingList(event) {
   content.innerHTML = list.render();
 }
 
+function changeCheckedStatus(idx, checkbox) {
+  if (checkbox.checked) {
+    list.items[idx].check();
+  } else {
+    list.items[idx].uncheck();
+  }
+}
+
 addItemButton.addEventListener('click', addToShoppingList);
 
 const listElement = list.render();

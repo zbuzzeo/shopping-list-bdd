@@ -15,10 +15,17 @@ class ShoppingListItem {
     this.isDone = false;
   }
 
-  render() {
-    return `<li class="completed_${this.isDone}"><span>${
-      this.name
-    }</span> <span>${this.description}</span></li>`;
+  render(idx) {
+    const checkbox = document.createElement('input');
+
+    checkbox.type = 'checkbox';
+    checkbox.className = 'check';
+
+    return `<li class="completed_${this.isDone}">
+    <input onchange="changeCheckedStatus(${idx}, this)" type="checkbox" class="check"/> 
+    <span>${this.name}</span> 
+    <span>${this.description}</span>
+    </li>`;
   }
 }
 
