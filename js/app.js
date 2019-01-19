@@ -5,10 +5,10 @@ const addItemButton = document.querySelector('#addShoppingListItemButton');
 
 const list = new ShoppingList();
 
-function addToShoppingList() {
+function addToShoppingList(event) {
   const title = document.querySelector('#title').value;
   const description = document.querySelector('#description').value;
-  const newItem = new ShoppingListItem1(title, description);
+  const newItem = new ShoppingListItem(title, description);
 
   list.addItem(newItem);
   content.innerHTML = list.render();

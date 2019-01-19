@@ -40,6 +40,6 @@ class ShoppingList {
   }
 }
 
-module.exports = {
-  ShoppingList: ShoppingList
-};
+// module.exports = {
+//   ShoppingList: ShoppingList
+// };

@@ -22,6 +22,6 @@ class ShoppingListItem {
   }
 }
 
-module.exports = {
-  ShoppingListItem : ShoppingListItem
-};
+// module.exports = {
+//   ShoppingListItem : ShoppingListItem
+// };
