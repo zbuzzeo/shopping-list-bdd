@@ -20,6 +20,12 @@ function changeCheckedStatus(idx, checkbox) {
   } else {
     list.items[idx].uncheck();
   }
+  content.innerHTML = list.render();
+}
+
+function removeItemButtonClicked(idx) {
+  list.removeItem(list.items[idx]);
+  content.innerHTML = list.render();
 }
 
 addItemButton.addEventListener('click', addToShoppingList);

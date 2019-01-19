@@ -21,11 +21,21 @@ class ShoppingListItem {
     checkbox.type = 'checkbox';
     checkbox.className = 'check';
 
-    return `<li class="completed_${this.isDone}">
-    <button onclick="removeItemButtonClicked(${idx})">x</button><input onchange="changeCheckedStatus(${idx}, this)" type="checkbox" class="check"/> 
-    <span>${this.name}</span> 
-    <span>${this.description}</span>
-    </li>`;
+    if (this.isDone) {
+      return `<li class="completed_${this.isDone}">
+        <button onclick="removeItemButtonClicked(${idx})">x</button>
+        <input onchange="changeCheckedStatus(${idx}, this)" type="checkbox" class="check" checked/> 
+        <span>${this.name}</span> 
+        <span>${this.description}</span>
+        </li>`;
+    } else {
+      return `<li class="completed_${this.isDone}">
+        <button onclick="removeItemButtonClicked(${idx})">x</button>
+        <input onchange="changeCheckedStatus(${idx}, this)" type="checkbox" class="check"/> 
+        <span>${this.name}</span> 
+        <span>${this.description}</span>
+        </li>`;
+    }
   }
 }
 

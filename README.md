@@ -209,7 +209,7 @@ Modify the ShoppingListItem `render()` method to include a `button` element with
 
 Create a `removeItemButtonClicked` function that accepts a single argument, idx.  
 It will find a ShoppingListItem based on the idx passed in to the function.  
-It will call the shopping_list instance's `removeItem` method, while passing in the found ShoppingListItem object as an argument. Then, re-render the shopping list.  
+It will call the shopping_list instance's `removeItem` method, while passing in the found ShoppingListItem object as an argument. Then, re-render the shopping list.
 
 Commit and push your work.
 
