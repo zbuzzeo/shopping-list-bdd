@@ -22,7 +22,7 @@ class ShoppingListItem {
     checkbox.className = 'check';
 
     return `<li class="completed_${this.isDone}">
-    <input onchange="changeCheckedStatus(${idx}, this)" type="checkbox" class="check"/> 
+    <button onclick="removeItemButtonClicked(${idx})">x</button><input onchange="changeCheckedStatus(${idx}, this)" type="checkbox" class="check"/> 
     <span>${this.name}</span> 
     <span>${this.description}</span>
     </li>`;
